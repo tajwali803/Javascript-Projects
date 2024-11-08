@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Password Strength</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="passwordDiv">
+		<input type="password" placeholder="Password" id="password" name="">
+		<p id="p-strength"></p>
+	</div>
+
+	<script>
+		let password = document.getElementById("password");
+		let pTag = document.getElementById("p-strength");
+		password.addEventListener("input",()=>{
+			if(password.value.length === ""){
+				password.style.borderColor = "gray"
+			pTag.style.color = "gray"	
+			}
+		else if(password.value.length < 4){
+			pTag.innerHTML = "Password is short"
+			password.style.borderColor = "red"
+			pTag.style.color = "red"
+		}	
+		if(password.value.length >=4 && password.value.length < 8){
+			pTag.innerHTML = "Password is Mediun";
+			password.style.borderColor = "orange"
+			pTag.style.color = "orange"
+		}
+		else if (password.value.length >=8) {
+			pTag.innerHTML = "Password is Stong";
+			password.style.borderColor = "blue"
+			pTag.style.color = "blue"	
+		}
+		})
+		
+
+	</script>
+</body>
+</html>
