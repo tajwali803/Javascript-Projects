@@ -1,0 +1,46 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.navbar-brand{
+	margin-left:3rem ;
+	font-weight: 600;
+}
+#cv-form{
+	background: #c6d9ec;
+	border-radius: 30px;
+	padding: 30px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	box-shadow: 3px 10px 10px ;
+/*	display: none;*/
+}
+#cv-form hr{
+	width: 20%;
+	position: absolute;
+	top: 20%;
+	left: 40%;
+	height: 5px;
+    background: lch(46 16.07 25.52);
+}
+#cv-template{
+	background: #d9e6f2;
+	border-radius: 30px;
+	display: none;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	padding: 2rem;
+}
+#cv-template a{
+	color: rgba(223, 232, 245, 1);
+}
+.myimg{
+	border-radius:50% ;
+	width: 200px;
+}
+.background{
+	background: #009999;
+	color: white;
+	border-radius: 30px;
+}
